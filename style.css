@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  padding: 10px 0;
+}
+nav .menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: auto;
+  padding: 0 20px;
+}
+nav .menu .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .menu ul li {
+  display: inline-flex;
+  list-style: none;
+  margin-right: 4px;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  padding: 4px 14px;
+  color: white;
+  transition: all 0.2s linear;
+  border-radius: 4px;
+}
+nav .menu ul li a:hover {
+  background: linear-gradient(
+    -45deg,
+    rgba(107, 63, 176, 0.3),
+    rgba(148, 87, 217, 0.3)
+  );
+  color: #fff;
+}
+.img {
+  background: url(skyline.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  top: 60px;
+}
+.main .center-text {
+  margin-top: 30px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 20px;
+}
+.main .center-text .title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 70px;
+}
+.main .center-text .buttons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .center-text .buttons button {
+  border: 1px solid;
+  height: 35px;
+  width: 110px;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.2s linear;
+}
+.main .center-text .buttons button:hover {
+  background-color: #fff;
+  color: black;
+  border: none;
+}
+.title .title-2 {
+  animation: typing 5s steps(17) infinite;
+}
